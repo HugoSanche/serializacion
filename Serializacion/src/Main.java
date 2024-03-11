@@ -3,7 +3,8 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Persona persona=new Persona("Hugo",35);
+        Persona persona=new Persona("Hugo",35,"Puebla",new Animal("Osito"));
+        Persona.pais="Mexico";
 
         //Serializacion
         FileOutputStream fileOutputStream=new FileOutputStream("Persona.txt");
